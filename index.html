@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Azena Art </title>
+    <meta name="description" content="This Is my art Store" />
+  
+    <style>
+        body {background-color: rgb(145, 255, 195);}
+        
+        </style>
+
+
+</head>
+
+  <body>
+  
+    <center>
+    <div>
+      <h1 style="background-color: red;" >Azena Art</h1>
+      <p>This is My Art Store</p>
+    </div>
+  
+    <form action="" method="GET">
+      <input type="hidden" value="Azena" />
+
+      <div>
+        <label>Username</label>
+        <input type="text"  placeholder="wrie your Username " 
+        name="user" autofocus required/>
+      </div>
+      <br />
+
+      <div>
+        <label>Email</label>
+        <input type="email"placeholder="Write A Valid Email" 
+         required  name="mail"  />
+      </div>
+      <br />
+    
+      <div>
+        <label>Password</label>
+        <input
+          type="password"
+          required
+          placeholder="Write A Complex Password"
+          name="pass"
+          minlength="10"
+          maxlength="20"
+        />
+      </div>
+      <br />
+   
+      <div>
+      <input type="button" id="changycolor" value="choose your favourite Color" onclick="changecolor()">
+        <input type="color" name="color" id="colorchange" />
+      </div>
+      <br />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Save" />
+    </form>
+
+  </center>
+
+  </body>
+
+<script>
+function changecolor() {
+let color = document.getElementById ('colorchange').value;
+document.body.style.background = color ;
+
+}
+
+</script>
+
+
+</html>
